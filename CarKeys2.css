@@ -1,0 +1,284 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+	
+	height: 100%;
+	background: transparent;
+	color: white;
+		
+}
+html{
+	background-color: #161616;
+	background-repeat: no-repeat;
+	background-image: url("logo.jpg");
+	background-size: auto 100%;
+	background-attachment: fixed;
+	background-color: #161616;
+	background-position: right;
+}
+.box{
+	
+	height: auto;
+	width: 100%;
+	
+	
+
+}
+
+h1{
+	font-size: 60px;
+}
+
+p {
+	font-size: 25px;
+}
+
+
+
+.left{
+	display: table-cell;
+	height: auto;
+	width: 50%;
+	left: 0;
+	position: absolute;
+}
+
+.szoveg{
+	width: 100%;
+	
+}
+
+.leftbox{
+	margin-left:10%;
+	margin-top: 5%;
+	position: relative;
+	height: auto;
+	vertical-align: middle;
+	
+}
+
+.badi{
+	position: absolute;
+	display: flex;
+	width: 100px;
+	
+	margin-left: 0px;
+	align-items: flex-end;
+	min-width: 50vh;
+	
+}
+
+.leftbottom{
+	
+	position: relative;
+	width: 100%;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 0px;
+}
+
+.leftbottom bo{
+	display: none;
+}
+
+.toggle{
+	display: none;
+}
+
+.right{
+	
+	height: 90%;
+	width: 50%;
+	z-index: 10000;
+	position: fixed;
+	right: 0;
+}
+
+.photok{
+	position: relative;
+ 	margin-top: 5%;	
+	width: 700px;
+	background-color: black;
+	height: 18%;
+	box-shadow: 0 0 15px 4px #777777;
+	z-index: 100;
+	justify-content: center;	
+	overflow: hidden;	
+	border-radius: 50px;
+	list-style: none;
+
+}
+
+.btn{
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	height: 20%;
+}
+
+.button {
+	z-index: 200;
+	width: 100%;
+	height: auto;
+	background-color: #161616;
+	box-shadow: 0 0 20px 9px #000000;
+	text-align: center;
+	bottom: 0px;
+	position: absolute;
+	border-radius: 250px 250px 0px 0px;
+	}
+
+.links {
+	
+	max-width: 100px;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.links[data-animated="true"]{
+	
+	flex-wrap: nowrap;
+	animation: scroll 20s linear infinite;
+	
+}
+
+.csak{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	bottom: 1px;
+}
+
+@keyframes scroll {
+ to {
+	transform: translate(-100%);
+ }
+}
+
+
+
+@media (max-width: 1000px) {
+
+	html{
+	
+	background-color: #161616;
+	background-repeat: no-repeat;
+	
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-color: #161616;
+	background-position: 60% 20%;
+	}
+
+	.right {
+	top: 10px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	
+	
+	}
+
+	.left{
+	top: 50%;
+	display: table-cell;
+	height: 70%;
+	width: 100%;
+	
+	position: absolute;
+	}
+
+	
+	.photok{
+	position: relative;
+ 	margin-top: 10%;	
+	width: 100%;
+	background-color: black;
+	height: auto;
+	box-shadow: 0 0 15px 4px #777777;
+	z-index: 50;
+	justify-content: center;	
+	overflow: hidden;	
+	border-radius: 0px;
+	}
+
+	.leftbottom{
+	width: 100%;
+	height: 500px;	
+	display: flex;
+	position: absolute;
+	bottom: 1px;
+		
+	}
+
+	.toggle{
+	background-repeat: no-repeat;
+	background-image: url("logo.jpg");
+	background-size: 145% 125%;
+	background-position: 50% 47%;
+	position: absolute;
+	width: 200px;
+	height: 200px;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 3px 4px #FFFFFF;
+	font-size: 2em;
+	transition: 1.25s;
+	bottom: 5px;
+	overflow: hidden;
+	}
+
+	.leftbottom bo{	
+	left: 76%;	
+	position: absolute;
+	list-style: none;
+	transform-origin: -250%;
+	transition: 0.2s;
+	height: 100px;
+	bottom: 10%;
+	background-color: white;
+	border-radius: 50px;
+	box-shadow: 0 0 35px 10px #777777;
+	
+	display: flex;
+	transform: rotate(0deg) translateX(-300px);
+	}
+
+	.leftbottom.active bo{
+	transform: rotate(calc(360deg / -8 * var(--i)));
+	}
+
+	.leftbottom bo a{
+	display: flex;
+	transform: rotate(calc(360deg / 8 * var(--i)));
+	}
+
+	.leftbottom.active .toggle{
+	transform: rotate(360deg);
+	}
+
+	.leftbox{
+	margin-left: 5%;
+}
+
+.button{
+	display: none;
+}
+
+.
+	}
+
+
+
+}
+
+

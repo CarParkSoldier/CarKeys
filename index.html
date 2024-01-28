@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+ <head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+ <link rel="stylesheet" href="CarKeys2.css">
+ </head>
+
+<body> 
+<div class="box">
+ <div class="left">
+	<div class="leftbox">
+
+		<div class="szoveg">
+		<h1>AUTOMOTIVE KEYS, LOCKSMITH, SECURITY</h1>
+		<p>Tenerife South Car-key is a specialising in car key services. We provide a fast and cost effective solution for repairing or replacing lost, stolen, or broken car keys. I am available on call 24 hours a day, 7 days a week, for all your vehicle key needs. Whether you need a car key replacement or key programming, you can count on us to get the job done quickly and efficiently. No matter the make or model of your car, we guarantee that we will have a key that fits perfectly. Contact us today for a fast, reliable, and affordable service.</p>
+
+		<h1>Chip tuning by dino technology!!</h1>
+		<p>I'll get the hidden reserves of your car! Our setups are done within safe limits and last but not least at affordable prices. With a good set-up, you can enjoy the extra performance for a long time, guaranteed with thousands of prepared contents behind us.</p>
+		</div>
+
+	</div>
+	
+<div class="csak">
+</div>
+ </div>
+ 
+
+
+<div class="right">
+ <div class="photok">
+	<ul class="links">
+			<li><img width='100' src='1.jpg'></li>
+			<li><img width='100' src='2.jpg'></li>
+			<li><img width='100' src='3.jpg'></li>
+			<li><img width='100' src='4.jpg'></li>
+			<li><img width='100' src='5.jpg'></li>
+			<li><img width='100' src='6.jpg'></li>
+			<li><img width='100' src='7.jpg'></li>
+			<li><img width='100' src='8.jpg'></li>
+			<li><img width='100' src='9.jpg'></li>
+			<li><img width='100' src='10.jpg'></li>
+			<li><img width='100' src='11.jpg'></li>
+			<li><img width='100' src='12.jpg'></li>
+			<li><img width='100' src='13.jpg'></li>
+			<li><img width='100' src='14.jpg'></li>
+			</ul>
+
+ </div>
+</div>
+
+
+<div class="btn">
+	<div class="button">
+	<p>Contact:
+	 		
+		<a href="https://www.facebook.com/profile.php?id=100090291452866"><img src="facebook.png" style="width:50px;"></a>
+		<a href="mailto: tfscarkey@gmail.com"><img src="Email.png" style="width:50px;"></a>
+		<a href="tel:604846090"><img src="telephone.png" style="width:50px;"></a>
+		<a href="https://wa.me/604846090/?text=Kicsi%20a%20pocsod"><img src="whatsapp.png" style="width:50px;"></a>
+	</p>
+	</div>
+
+
+<div class="leftbottom">
+ <div class="toggle"></div>
+	<bo style="--i:4;">
+	<a href="https://www.facebook.com/profile.php?id=100090291452866"><img src="facebook.png"></a>
+	</bo>
+	<bo style="--i:3;">
+	<a href="mailto: tfscarkey@gmail.com"><img src="Email.png"></a>
+	</bo>
+	<bo style="--i:2;">
+	<a href="tel:604846090"><img src="telephone.png"></a>
+	</bo>
+	<bo style="--i:1;">
+	<a href="https://wa.me/604846090/?text=Kicsi%20a%20pocsod"><img src="whatsapp.png"></a>
+	</bo>
+</div>
+</div>
+</div>
+
+
+
+<script>
+const scrollers = document.querySelectorAll(".links");
+
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+ addAnimation();
+}
+
+function addAnimation() {
+ scrollers.forEach((scroller) => {
+ scroller.setAttribute("data-animated", true);
+
+ const scrollerInner = scroller.querySelector(".links");
+ const scrollerContent = Array.from("scrollerInner.children");
+
+scrollerContent.forEach((item) => {
+ const duplicatedItem = item.cloneNode(true);
+ console.log(duplicatedItem);
+});
+});
+
+}
+</script>
+<script>
+let toggle = document.querySelector('.toggle');
+let leftbottom = document.querySelector('.leftbottom');
+
+toggle.onclick = function(){
+ leftbottom.classList.toggle('active')
+}
+
+</script>
+</body> 
+</html>
